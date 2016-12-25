@@ -69,7 +69,7 @@ class DictCompleter(DictMF):
                  detrend=False,
                  crop=None,
                  callback=None):
-        super().__init__(alpha=alpha,
+        super(DictCompleter,self).__init__(alpha=alpha,
                          n_components=n_components,
                          # Hyper-parameters
                          learning_rate=learning_rate,
